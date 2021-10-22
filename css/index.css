@@ -1,0 +1,502 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0 auto;
+  font-family: "helvetica_neue", Helvetica, sans-serif;
+}
+
+
+
+header{
+  width: 100%;
+  display: inline-block;
+  background-color: black;
+  font-size: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  z-index: 3;
+  padding: 10px 0;
+}
+
+div.logo{
+  display: inline-block;
+  width: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+img.logo{
+  width: 100%;
+}
+
+a.logo:hover{
+  opacity: .1;
+}
+
+input.search{
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 5px 10px 5px 10px;
+  outline: none;
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+/*   background-position: 5px 4px; */
+  background-position: right 10px center;
+  width: 30%;
+  transition: width 1s ease-in-out;
+  vertical-align: middle;
+  border: 1px solid black;
+}
+
+div.nav{
+  font-size: 14px;
+  display: inline-block;
+  padding: 5px 0;
+  margin-left: 20px;
+  vertical-align: middle;
+
+}
+
+ul.nav{
+  margin: 0 auto;
+  padding: 0;
+}
+
+li.nav{
+  font-weight: 600;
+  display: inline-block;
+  list-style: none;
+  color: white;
+  margin: 0;
+  padding: 0 10px 0 10px;;
+}
+
+a.nav{
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+}
+
+a.nav:hover{
+  opacity: .1;
+}
+
+div.user{
+  display: inline-block;
+  float: right;
+  vertical-align: middle;
+  padding: 5px 10px;
+}
+
+div.user > a:hover{
+  opacity: .1;
+}
+
+
+
+div.signup{
+  font-size: 14px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  float: right;
+  vertical-align: middle;
+  padding: 5px 10px;
+}
+
+
+div.signup:hover ul.signup{
+  /* 第三步 */
+  display: block;
+}
+
+
+ul.signup{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  display: none;
+  position: absolute;
+  top: 47.5px;
+  right: -2.5px;
+  z-index: 1;
+}
+
+
+ul.signup > li > a:hover{
+  color: black;
+  cursor: pointer;
+}
+
+ul.signup > li{
+  list-style: none;
+  width: 100px;
+}
+
+ul.signup > li > a{
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+hr.hr{
+  border: 1px solid white;
+  opacity: .5;
+  width: 75%;
+  margin: 0 auto;
+}
+
+div.slider{
+  position: relative;
+  font-size: 14px;
+  background-image: url("../images/slider.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 850px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+h1.slider{
+  position: absolute;
+  margin: 0;
+  top: 35%;
+  left: 10%;
+  line-height: 50px;
+  font-size: 36px
+}
+
+p.slider{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+button.slider{
+  border: 1px solid black;
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  padding: 10px 20px;
+  color: white;
+  background: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.slider:hover{
+  color: black;
+  background: white;
+  border: 1px solid black;
+}
+
+div.arrow_right{
+  position: absolute;
+  top: 50%;
+  right: 2.5%;
+  transform: translateY(-50%);
+}
+
+div.dotbox{
+  position: absolute;
+  left: 48.6%;
+  transform: translateY(-50%);
+  bottom: 25px;
+  cursor: pointer;
+}
+
+span.dot_on{
+  display: inline-block;
+  margin: 0 2.5px;
+}
+
+span.dot{
+  opacity: .5;
+  display: inline-block;
+  margin: 0 2.5px;
+}
+
+
+.wrapper-grid {
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 228px);
+  gap: 25px;
+}
+
+.container {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+
+.item_img {
+  width: 100%;
+}
+
+.item_name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.item_color {
+  color: #888888;
+  margin: 1rem 0;
+  font-size: 14px;
+}
+
+.item_price{
+  font-size: 14px;
+  margin: 1rem 0;
+}
+
+.footwear_shop{
+  font-size: 14px;
+  margin: 1rem 0;
+  text-align: right;
+}
+
+a.item{
+  color: black;
+  text-decoration: none;
+  text-transform: none;
+}
+
+div.title{
+  margin: 100px 10% 12.5px 10%;
+}
+h2.title{
+  display: inline-block;
+  font-size: 24px;
+  vertical-align: middle;
+  margin: 0;
+
+}
+a.title{
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  text-decoration: none;
+  color: black;
+  margin: 5px 0;
+}
+
+
+.wrapper-grid-brands {
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 25px;
+}
+
+.container-brands {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+
+.brands_img {
+  width: 100%;
+}
+
+.brands_name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+a.brands{
+  color: black;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.wrapper-grid-streetwear {
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: 2.5fr 2fr;
+  grid-template-rows: 2fr;
+  gap: 25px;
+}
+
+.container-streetwear {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+
+.streetwear_img {
+  width: 100%;
+}
+
+.streetwear_name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+a.streetwear{
+  color: black;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.wrapper-grid-streetwear-items {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 25px;
+}
+
+.wrapper-grid-footwear {
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: 2fr 2.5fr;
+  grid-template-rows: 2fr;
+  gap: 25px;
+}
+
+.container-footwear {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+
+.footwear_img {
+  width: 100%;
+}
+
+.footwear_name {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: right;
+}
+
+a.footwear{
+  color: black;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.wrapper-grid-footwear-items {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 25px;
+}
+
+
+footer.footer{
+  color: white;
+  margin-top: 100px;
+  background-color: black;
+  padding: 20px 0;
+}
+
+footer.footer > hr{
+  margin: 0;
+}
+
+.wrapper-grid-footer {
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  font-size: 14px;
+}
+
+.container-footer{
+  margin: 50px 0;
+}
+
+.container-footer > h2{
+  margin: 0;
+}
+
+.container-footer > p{
+  margin-bottom: 0;
+
+}
+
+p.copyright{
+  text-align: center;
+  margin: 8px;
+}
+
+div.copyright{
+  text-align: center;
+  margin: 0 10%;
+  color: #c9c9c9;
+  font-size: 12px;
+  line-height: 1rem;
+}
+div.copyright > a{
+  color: #c9c9c9;
+  text-decoration: none;
+}
+
+
+label.email{
+  display: block;
+}
+
+input.email{
+    position: relative;
+    display: inline-block;
+    width: 72.5%;
+    margin: 0px 25px 25px 0;
+    padding: 8px 0px;
+    color: white;
+    font-size: 14px;
+    line-height: 10px;
+    letter-spacing: 0.45px;
+    border-width: 0px 0px 1px;
+    border-top-style: initial;
+    border-right-style: initial;
+    border-left-style: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    border-image: initial;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-radius: 0px;
+    background: black;
+    outline-style: none;
+    appearance: none;
+}
+
+form.email{
+  margin-left: 50px;
+}
+
+button.email{
+  color: black;
+  background-color: white;
+  outline-style: none;
+  border-style: none;
+  width: 115px;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 0;
+}
+
+button.email:hover{
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
