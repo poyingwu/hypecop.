@@ -1,0 +1,138 @@
+div.bckgrnd-img-1{
+    width: 100%;
+    font-size: 0;
+    background-image: url("../images/about_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    margin: 0 auto;
+}
+
+div.about{
+    margin: 120px 30%;
+    line-height: 30px;
+}
+
+div.wrap-bckgrnd{
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+
+}
+
+div.bckgrnd-img-2{
+    font-size: 0;
+    background-image: url("../images/about_2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 600px;
+}
+
+div.bckgrnd-img-3{
+    font-size: 0;
+    background-image: url("../images/about_3.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 600px;
+}
+
+div.about h5{
+    margin-bottom: 0;
+    color: #9c9c9c;
+}
+
+div.about a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+div.about a:hover{
+    color: #9c9c9c;
+}
+
+div.bckgrnd-img-4{
+    width: 100%;
+    font-size: 0;
+    background-image: url("../images/about_4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    margin: 0 auto;
+}
+
+
+div.wrap-portfolio{
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+
+}
+
+div.portfolio-1{
+    width: 100%;
+    font-size: 0;
+    background-image: url("../images/portfolio_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 220px;
+}
+
+div.portfolio-2{
+    width: 100%;
+    font-size: 0;
+    background-image: url("../images/portfolio_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 220px;
+}
+
+div.portfolio-3{
+    width: 100%;
+    font-size: 0;
+    background-image: url("../images/portfolio_3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 220px;
+}
+
+div.portfolio-4{
+    width: 100%;
+    font-size: 0;
+    background-image: url("../images/portfolio_4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 220px;
+}
+
+div.portfolio-5{
+    width: 100%;
+    font-size: 0;
+    background-image: url("../images/portfolio_5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 220px;
+}
+
+div.portfolio-6{
+    width: 100%;
+    font-size: 0;
+    background-image: url("../images/portfolio_6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 220px;
+}

@@ -2,7 +2,6 @@ div.big_title{
   margin: 100px 10%;
   text-align: center;
   color: black;
-  border: 1px solid red;
 }
 div.big_title > h1{
   margin: 0;
@@ -23,18 +22,18 @@ div.big_title > h1{
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 25px;
-  border: 1px solid red;
+}
+
+div.filter{
+  margin-right: 50px;
 }
 
 div.product-counter{
   padding: 10px 0;
   display: inline-block;
-  border: 1px solid red;
 }
 div.sort{
-  display: inline-block;
   float: right;
-  border: 1px solid red;
   padding: 9px 0;
 }
 span.sort::after{
@@ -62,7 +61,6 @@ div.category > a{
 
 div.category{
   margin-bottom: 50px;
-  border: 1px solid red;
 }
 
 a.on{
@@ -211,4 +209,28 @@ div.size:hover{
     transition: box-shadow .3s ease-out,background-color .3s ease,-webkit-transform .3s ease-out;
     transition: transform .3s ease-out,box-shadow .3s ease-out,background-color .3s ease;
     transition: transform .3s ease-out,box-shadow .3s ease-out,background-color .3s ease,-webkit-transform .3s ease-out;
+  }
+
+  div.loadmore{
+    text-align: center;
+    margin: 25px 0;
+   }
+  
+   div.loadmore > a{
+    display: inline-block;
+    width: 280px;
+    height: 40px;
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+   }
+
+   div.loadmore > a:hover{
+   display: inline-block;
+   color: white;
+   border: 1px solid black;
+   background-color: black;
   }

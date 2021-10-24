@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>HYPECOP.</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/item.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="icon" href="./favicon.ico">
+    
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html" class="logo"><img src="./images/logo.svg" alt="" class="logo"></a>
+      </div>
+      <input type="text" class="search" placeholder="">
+      <div class="nav">
+        <ul class="nav">
+          <li class="nav"><a href="../streetwear.html" class="nav">STREETWEAR</a></li>
+          <li class="nav"><a href="../footwear.html" class="nav">FOOTWEAR</a></li>
+          <li class="nav"><a href="../news.html" class="nav">NEWS</a></li>
+          <li class="nav"><a href="../contact.html" class="nav">CONTACT</a></li>
+          <li class="nav"><a href="../about.html" class="nav">ABOUT</a></li>
+        </ul>
+      </div>
+      <div class="signup">
+      <a href="" class="user"><img src="./images/user.svg" alt="" class="user"></a>
+      <ul class="signup">
+        <li class="login">
+          <a href="#">LOGIN</a>
+          <hr class="hr">
+        </li>
+        <li class="signup">
+          <a href="#">SIGNUP</a>
+        </li>
+      </ul>
+      </div>
+      <div class="user">
+        <a href="" class="user"><img src="./images/cart.svg" alt="" class="cart"></a>
+      </div>
+    </header>
+
+    
+
+
+
+    <div class="big_title">
+        <h1>CONTACT</h1>
+      </div>
+
+    <div class="form">
+        <div class="form-input">
+            <label for="your_email">Your email address<span class="required"> *</span><span class="required_fields">* Required fields</span></label>
+            <input type="text" name="your_email" id="your_email" aria-required="true">
+        </div>
+
+        <div class="form-input">
+            <label id="request_subject_label" for="request_subject">Subject<span class="required"> *</span></label>
+            <input type="text" name="request[subject]" id="request_subject" maxlength="150" size="150" aria-required="true" aria-labelledby="request_subject_label">
+        </div>
+
+        <div class="form-input">
+            <label id="request_description_label" for="request_description">Message<span class="required"> *</span></label>
+            <textarea name="request[description]" id="request_description" aria-required="true" aria-labelledby="request_description_label"></textarea>
+        </div>
+
+        <div class="form-input">
+            <label id="request_custom_fields_label" for="request_custom_fields">Order number</label>
+            <input type="number" name="request[custom_fields]" id="request_custom_fields" step="1" aria-required="false" aria-labelledby="request_custom_fields_label">
+        </div>
+
+        <div class="form-input">
+            <label id="request_custom_fields_label" for="request_custom_fields">Reason for contact<span class="required"> *</span></label>
+            <input type="hidden" name="request[custom_fields]" id="request_custom_fields" autocomplete="off" data-tagger="[{&quot;label&quot;:&quot;-&quot;,&quot;value&quot;:&quot;&quot;},{&quot;label&quot;:&quot;My Order&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;I want to cancel my order&quot;,&quot;value&quot;:&quot;cancellation__request&quot;},{&quot;label&quot;:&quot;I want to change my order&quot;,&quot;value&quot;:&quot;order_amendment_request&quot;},{&quot;label&quot;:&quot;Other&quot;,&quot;value&quot;:&quot;order__query&quot;}]},{&quot;label&quot;:&quot;My Delivery&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;I want to track my delivery&quot;,&quot;value&quot;:&quot;shipping__query&quot;},{&quot;label&quot;:&quot;I haven’t received my delivery&quot;,&quot;value&quot;:&quot;missing_parcel_query&quot;},{&quot;label&quot;:&quot;Brexit&quot;,&quot;value&quot;:&quot;brexit__shipping__delay&quot;},{&quot;label&quot;:&quot;Other&quot;,&quot;value&quot;:&quot;delivery__query&quot;}]},{&quot;label&quot;:&quot;My Return&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;I want to return my order&quot;,&quot;value&quot;:&quot;return__process&quot;},{&quot;label&quot;:&quot;Have you received my return?&quot;,&quot;value&quot;:&quot;return__delay&quot;},{&quot;label&quot;:&quot;Other&quot;,&quot;value&quot;:&quot;return__query&quot;}]},{&quot;label&quot;:&quot;My Account&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;I can't log into my account&quot;,&quot;value&quot;:&quot;account__issue&quot;},{&quot;label&quot;:&quot;I can't reset my password&quot;,&quot;value&quot;:&quot;password__reset&quot;},{&quot;label&quot;:&quot;I want to delete my account&quot;,&quot;value&quot;:&quot;delete__account&quot;},{&quot;label&quot;:&quot;Other&quot;,&quot;value&quot;:&quot;my_account_other&quot;}]},{&quot;label&quot;:&quot;END. Launches&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;How do I register for END. Launches?&quot;,&quot;value&quot;:&quot;launches__registeration&quot;},{&quot;label&quot;:&quot;I want to cancel my END. Launches entry&quot;,&quot;value&quot;:&quot;launches__cancellation&quot;},{&quot;label&quot;:&quot;Other&quot;,&quot;value&quot;:&quot;end__launches__query&quot;}]},{&quot;label&quot;:&quot;Product Enquiry&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;I need information on a product on your site&quot;,&quot;value&quot;:&quot;product__query&quot;},{&quot;label&quot;:&quot;Will you restock this product?&quot;,&quot;value&quot;:&quot;restock__query&quot;},{&quot;label&quot;:&quot;Other&quot;,&quot;value&quot;:&quot;product__enquiry&quot;}]},{&quot;label&quot;:&quot;Technical Issue&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;My payment method isn't working&quot;,&quot;value&quot;:&quot;payment__issue&quot;},{&quot;label&quot;:&quot;I can't add an item to my basket&quot;,&quot;value&quot;:&quot;checkout__problems&quot;},{&quot;label&quot;:&quot;Other&quot;,&quot;value&quot;:&quot;technical__issues&quot;}]},{&quot;label&quot;:&quot;General Enquiry&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;I have an enquiry about your stores&quot;,&quot;value&quot;:&quot;end__stores__query&quot;},{&quot;label&quot;:&quot;Other&quot;,&quot;value&quot;:&quot;general__query&quot;}]}]" aria-required="true" aria-labelledby="request_custom_fields_label" value="">
+            <a class="nesty-input" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-controls="_aqh29dj3j" aria-required="true" aria-labelledby="request_custom_fields_label" style="max-width: 100%;">-</a>
+        </div>
+
+        <div class="form-input">
+            <label id="request_custom_fields_label" for="request_custom_fields">Phone number<span class="required"> *</span></label>
+            <input type="text" name="request_custom_fields" id="request_custom_fields" aria-required="true">
+        </div>
+
+        <div class="form-input">
+            <label for="request-attachments">Attachments</label>
+            <input type="file" multiple="true" id="request-attachments" data-fileupload="true" data-dropzone="upload-dropzone" data-error="upload-error" data-create-url="/hc/en-us/request_uploads" data-name="request[attachments][]" data-pool="request-attachments-pool" data-delete-confirm-msg="" aria-describedby="upload-error">
+        </div>
+
+        <div class="submit_btn">
+            <center><input class="submit_btn" type="submit" name="commit" value="SUBMIT"></center>
+        </div>
+
+        <p>You can call us during business hours (Monday - Friday 00:00 - 12:00 PT / 01:00 - 13:00 MT / 02:00 - 14:00 CT / 03:00 - 15:00 ET Saturday - Sunday 00:00 - 09:00 PT / 01:00 - 10:00 MT / 02:00 - 11:00 CT / 03:00 - 12:00 ET ) on:
+            <br>
+            <br>
+            Telephone: +886 922-572-733
+        </p>
+        
+    </div>
+
+
+
+
+
+  <footer class="footer">
+    <div class="wrapper-grid-footer">
+      <div class="container-footer">
+    <h2>SIGN UP TO THE HYPECOP. MAILING LIST</h2>
+    <p>Sign up for exclusive early sale access and tailored new arrivals</p>
+      </div>
+      <div class="container-footer">
+        <form class="email" action="index.html" method="post">
+          <label class="email" for="">Email</label>
+          <input class="email" type="email" name="email" value="">
+          <button class="email" type="button" name="button">Sign up</button>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">©2021 Hypecop. All Rights Reserved.
+    <br>
+    </p>
+    <div class="copyright">本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。參考資源:
+      <a href="https://www.endclothing.com/us"> END. Clothing</a>
+      。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/webindex/">
+        [緯育TibaMe]</a>
+        ，後續會由專人協助處理
+  </div>
+
+  </footer>
+
+
+  <script type="text/javascript" src="../js/vue.js"></script>
+  <script type="text/javascript" src="../js/priceRange.js"></script>
+
+  </body>
+</html>
