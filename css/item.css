@@ -7,13 +7,16 @@ ol.pagination{
 
 ol.pagination > li{
     display: inline-block;
-    color: #898989;
     font-size: 14px;
   }
 
   ol.pagination > li > a{
     text-decoration: none;
     color: #898989;
+    -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
   }
 
   ol.pagination > li > a:hover{
@@ -41,6 +44,14 @@ ol.pagination > li{
     margin-bottom: 15px;
     border: 1px solid #898989;
       cursor: pointer;
+      -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+img.item_img_others:hover{
+    opacity: 1;
 }
 
 img.big_item_img{
@@ -90,6 +101,11 @@ div.container-detail-description label{
     margin-bottom: 10px;
     user-select: none;
     cursor: pointer;
+    -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+
 }
 
 div.container-detail-description label:hover{
@@ -151,7 +167,10 @@ a.add_to_cart{
     text-align: center;
     text-decoration: none;
     color: white;
-    margin: 25px 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 
 a.add_to_cart:hover{
@@ -168,6 +187,10 @@ a.add_to_wishlist{
     text-decoration: none;
     color: white;
     margin: 25px 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 
 a.add_to_wishlist:hover{

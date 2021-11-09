@@ -81,6 +81,10 @@ input.submit_btn{
     justify-content: center;
     cursor: pointer;
     border: 1px solid black;
+    -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
     
 }
 

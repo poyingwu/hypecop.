@@ -64,16 +64,52 @@ div.category{
 }
 
 a.on{
+  position: relative;
   color: black;
+  -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 
 a.off{
-  color: #9C9C9C;
+  color: rgb(182, 182, 182);
+  position: relative;
+  -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 
 a.off:hover{
   color: black;
 }
+
+a.on:hover div.underline-black{
+  width: 100%;
+}
+
+a.off:hover div.underline-black{
+  width: 100%;
+}
+
+div.underline-black{
+    margin-top: 4px;
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+div.active{
+  width: 100%;
+}
+
+
 
 h2.category-title{
   font-size: 18px;
@@ -134,6 +170,10 @@ div.size{
   color: #9C9C9C;
   margin: 0;
   cursor: pointer;
+  -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 
 div.size:hover{
@@ -226,6 +266,10 @@ div.size:hover{
     text-decoration: none;
     padding: 10px 15px;
     font-weight: bold;
+    -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
    }
 
    div.loadmore > a:hover{

@@ -32,8 +32,21 @@ img.logo{
   width: 100%;
 }
 
+a.logo{
+  opacity: 1;
+  -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
 a.logo:hover{
-  opacity: .1;
+  opacity: .4;
+}
+
+form.search{
+  display: inline-block;
+  width: 30%;
 }
 
 input.search{
@@ -45,7 +58,7 @@ input.search{
   background-repeat: no-repeat;
 /*   background-position: 5px 4px; */
   background-position: right 10px center;
-  width: 30%;
+  width: 100%;
   transition: width 1s ease-in-out;
   vertical-align: middle;
   border: 1px solid black;
@@ -69,20 +82,50 @@ li.nav{
   font-weight: 600;
   display: inline-block;
   list-style: none;
-  color: white;
+  
   margin: 0;
   padding: 0 10px 0 10px;;
 }
 
 a.nav{
+  position: relative;
   text-decoration: none;
   color: white;
-  opacity: 1;
+  -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+
 }
 
 a.nav:hover{
-  opacity: .1;
+  width: 100%;
+  color: #9C9C9C;
 }
+
+a.nav:hover .underline{
+  width: 100%;
+  opacity: 1;
+}
+
+div.underline{
+  opacity: 1;
+    margin-top: 4px;
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+div.active{
+  width: 100%;
+}
+
+
 
 div.user{
   display: inline-block;
@@ -91,8 +134,26 @@ div.user{
   padding: 5px 10px;
 }
 
+div.user > a{
+  opacity: 1;
+  -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
 div.user > a:hover{
-  opacity: .1;
+  opacity: .4;
+}
+
+div.signup > a{
+  opacity: 1;
+  -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+div.signup > a:hover{
+  opacity: .4;
 }
 
 
@@ -105,12 +166,20 @@ div.signup{
   float: right;
   vertical-align: middle;
   padding: 5px 10px;
+  -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 
 
 div.signup:hover ul.signup{
   /* 第三步 */
   display: block;
+  -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 
 
@@ -121,9 +190,22 @@ ul.signup{
   color: white;
   display: none;
   position: absolute;
-  top: 30.5px;
+  top: 26.5px;
   right: -2.5px;
   z-index: 1;
+  -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+
+ul.signup > li > a{
+  color: white;
+  -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 
 
@@ -131,6 +213,7 @@ ul.signup > li > a:hover{
   color: black;
   cursor: pointer;
 }
+
 
 ul.signup > li{
   list-style: none;
@@ -194,6 +277,11 @@ button.slider{
   background: black;
   font-weight: 600;
   cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  
 }
 
 button.slider:hover{
@@ -292,6 +380,18 @@ a.title{
   text-decoration: none;
   color: black;
   margin: 5px 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+a.title:hover{
+  color: #9c9c9c;
+}
+
+a.title:hover .underline-black{
+  width: 42px;
 }
 
 
@@ -493,6 +593,10 @@ button.email{
   height: 40px;
   cursor: pointer;
   margin-top: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
 button.email:hover{
