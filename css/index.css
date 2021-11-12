@@ -237,84 +237,9 @@ hr.hr{
   margin: 0 auto;
 }
 
-div.slider{
-  position: relative;
-  font-size: 14px;
-  background-image: url("../images/slider.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 850px;
-  width: 100%;
-  margin: 0 auto;
-  z-index: 0;
-}
 
-h1.slider{
-  position: absolute;
-  margin: 0;
-  top: 35%;
-  left: 10%;
-  line-height: 50px;
-  font-size: 36px
-}
 
-p.slider{
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  left: 10%;
-}
 
-button.slider{
-  border: 1px solid black;
-  position: absolute;
-  top: 55%;
-  left: 10%;
-  padding: 10px 20px;
-  color: white;
-  background: black;
-  font-weight: 600;
-  cursor: pointer;
-  -webkit-transition: .4s;
-  transition: .4s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  
-}
-
-button.slider:hover{
-  color: black;
-  background: white;
-  border: 1px solid black;
-}
-
-div.arrow_right{
-  position: absolute;
-  top: 50%;
-  right: 2.5%;
-  transform: translateY(-50%);
-}
-
-div.dotbox{
-  position: absolute;
-  left: 48.6%;
-  transform: translateY(-50%);
-  bottom: 25px;
-  cursor: pointer;
-}
-
-span.dot_on{
-  display: inline-block;
-  margin: 0 2.5px;
-}
-
-span.dot{
-  opacity: .5;
-  display: inline-block;
-  margin: 0 2.5px;
-}
 
 
 .wrapper-grid {

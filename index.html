@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/item.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/slider.css">
     <link rel="icon" href="./favicon.ico">
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://kit.fontawesome.com/b38154de46.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -38,19 +39,50 @@
       </div>
     </header>
 
+    <!----  SLIDER STARTS  ---->
+
     <div class="slider">
-      <h1 class="slider">NIKE X SACAI X CLOT<br>LDWAFFLE</h1>
-      <p class="slider">Launched on 09/10/2021</p>
-      <button class="slider" type="button" name="button">Shop now</button>
-      <div class="arrow_right">
-      <a href="#"><img src="./images/arrow_right.svg" alt=""></a>
+      <!-- fade css -->
+      <a href=""><div class="myslide img1">
+        <div class="txt">
+          <h1>JOHN ELLIOTT X MASTERMIND JAPAN - PRESENTED BY END</h1>
+          <p>Launches 13/11/2021</p>
+          <button class="slider-button" type="button" name="button">Shop now</button>
+        </div>
+      </div></a>
+      
+      <a href=""></a><div class="myslide img2">
+        <div class="txt">
+          <h1>FEAR OF GOD ESSENTIALS OFFERS COSY AUTUMNAL TONES FOR AW21</h1>
+          <p>Jerry Lorenzo's celebrated basics line lands in a palette of warm brown tones and leafy green hues.</p>
+          <button class="slider-button" type="button" name="button">Shop now</button>
+        </div>
+      </div></a>
+      
+      <a href=""></a><div class="myslide img3">
+        <div class="txt">
+          <h1>HE NORTH FACE TRANS-ANTARCTICA: IT'S MORE THAN A JACKET</h1>
+          <p>The North Face's Trans-Antarctica capsule is a testament to the idea that every journey is a milestone.</p>
+          <button class="slider-button" type="button" name="button">Shop now</button>
+        </div>
+      </div></a>
+      
+      
+      <!-- /fade css -->
+      
+      <!-- onclick js -->
+      <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+      
+      <div class="dotsbox" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
       </div>
-      <div class="dotbox">
-        <span class="dot_on"><a href="#"><img src="./images/dot.svg" alt=""></a></span>
-        <span class="dot"><a href="#"><img src="./images/dot.svg" alt=""></a></span>
-        <span class="dot"><a href="#"><img src="./images/dot.svg" alt=""></a></span>
-      </div>
+      <!-- /onclick js -->
     </div>
+
+    <!----  SLIDER ENDS  ---->
 
 
     <div class="title">
@@ -313,6 +345,7 @@
   <script type="text/javascript" src="./js/vue.js"></script>
   <script type="text/javascript" src="./js/priceRange.js"></script>
   <script type="text/javascript" src="./js/list_grid.js"></script>
+  <script src="./js/slider.js"></script>
 
   </body>
 </html>
