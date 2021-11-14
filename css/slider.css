@@ -266,6 +266,7 @@ body{
 	}
 
 	.txt h1{
+		line-height: 25px;
 		font-size: 18px;
 		margin-bottom: 15px;
 	}
@@ -281,12 +282,12 @@ body{
 @media screen and (max-width: 366px){
     .txt{
 		letter-spacing: 2px;
-		line-height: 25px;
+		line-height: 20px;
 		top: 45%;
 	}
 
 	.txt h1{
-		line-height: 25px;
+		line-height: 20px;
 		font-size: 16px;
 		margin-bottom: 10px;
 	}
