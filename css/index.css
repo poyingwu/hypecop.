@@ -135,7 +135,6 @@ div.active{
 
 
 div.user{
-  display: inline-block;
   float: right;
   vertical-align: middle;
   padding: 5px 10px;
@@ -167,7 +166,6 @@ div.signup > a:hover{
 
 div.signup{
   font-size: 14px;
-  display: inline-block;
   position: relative;
   cursor: pointer;
   float: right;
@@ -313,7 +311,6 @@ h2.title{
 }
 a.title{
   font-size: 14px;
-  display: inline-block;
   vertical-align: middle;
   float: right;
   text-decoration: none;
@@ -756,19 +753,26 @@ button.burger{
   }
 
   .wrapper-grid-brands {
+    margin: 0 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 10px;
   }
   .wrapper-grid-streetwear {
+    margin: 0 10px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 10px;
   }
   .wrapper-grid-footwear {
+    margin: 0 10px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 10px;
+  }
+  div.title{
+    margin-right: 10px;
+    margin-left: 10px;
   }
   h1.footwear_name{
     text-align: left;
