@@ -128,7 +128,6 @@ body{
 	color: white;
 	letter-spacing: 2px;
 	line-height: 35px;
-	top: 30%;
 	left: 15%;
 	-webkit-animation-name: posi;
   	-webkit-animation-duration: 2s;
@@ -154,10 +153,10 @@ body{
 	font-size: 36px;
 	margin-bottom: 20px;
 	line-height: 50px;
-	width: 50%;
+	width: 70%;
 }
 .txt p{
-	width: 40%;
+	width: 60%;
 	font-size: 14px;
 	margin-bottom: 20px;
 }
@@ -184,61 +183,91 @@ body{
 
 
 
+
+
+
+
+
+@media screen and (min-width: 992px){
+	
+	.txt{
+		top: 30%;
+	}
+
+}
+
+@media screen and (max-width: 992px){
+	
+	.txt{
+		top: 25%;
+	}
+
+}
+
 /* 5 */
-@media screen and (max-width: 800px){
+@media screen and (max-width: 768px){
 	.myslide{
-		height: 500px;
+		height: 602px;
 	}
 	.txt{
 		letter-spacing: 2px;
 		line-height: 25px;
-		top: 20%;
+		top: 45%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		-webkit-animation-name: posi2;
+		-webkit-animation-name: posi;
 		-webkit-animation-duration: 2s;
-		animation-name: posi2;
+		animation-name: posi;
 		animation-duration: 2s;
 	}
 
-	@-webkit-keyframes posi2 {
-	  from {top: 35%;}
-	  to {top: 50%;}
-	}
-
-
-	@keyframes posi2 {
-	  from {top: 35%;}
-	  to {top: 50%;}
-	}
+	@-webkit-keyframes posi {
+		from {left: 40%;}
+		to {left: 50%;}
+	  }
+	  
+	  
+	  @keyframes posi {
+		from {left: 40%;}
+		to {left: 50%;}
+	  }
 
 	.txt h1{
-		font-size: 40px;
+		font-size: 24px;
+		width: 100%;
 	}
 	.txt p{
 		font-size: 13px;
+		width: 100%;
+	}
+	.dotsbox{
+		bottom: 30px;
+	}
+	.dot{
+		width: 10px;
+		height: 10px;
 	}
 
 }
 /* /5 */
 
 /* 6 */
-@media screen and (max-width: 520px){
+@media screen and (max-width: 576px){
     .txt{
 		letter-spacing: 2px;
 		line-height: 25px;
-		top: 20%;
+		top: 45%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		-webkit-animation-name: posi2;
+		-webkit-animation-name: posi;
 		-webkit-animation-duration: 2s;
-		animation-name: posi2;
+		animation-name: posi;
 		animation-duration: 2s;
 	}
 
 	.txt h1{
-		font-size: 30px;
-		margin-bottom: 20px;
+		font-size: 18px;
+		margin-bottom: 15px;
 	}
 	.sign{
 		margin-right: 20px;
@@ -247,7 +276,47 @@ body{
 		font-size: 12px;
 	}
 }
+
+
+@media screen and (max-width: 366px){
+    .txt{
+		letter-spacing: 2px;
+		line-height: 25px;
+		top: 45%;
+	}
+
+	.txt h1{
+		line-height: 25px;
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.sign{
+		margin-right: 20px;
+	}
+	.sign a{
+		font-size: 10px;
+	}
+	.prev, .next{
+		font-size: 20px;
+	}
+}
 /* /6 */
+
+@media screen and (min-width: 1400px){
+	
+	.txt{
+		top: 35%;
+	}
+	.txt h1{
+		font-size: 36px;
+		width: 60%;
+	}
+	.txt p{
+		font-size: 18px;
+		width: 60%;
+	}
+
+}
 
 
 

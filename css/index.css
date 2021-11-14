@@ -1,6 +1,9 @@
 *{
   box-sizing: border-box;
 }
+html{
+  --aside-width: 240px;
+}
 
 body{
   margin: 0 auto;
@@ -64,7 +67,7 @@ input.search{
   border: 1px solid black;
 }
 
-div.nav{
+nav.nav{
   font-size: 14px;
   display: inline-block;
   padding: 5px 0;
@@ -84,7 +87,11 @@ li.nav{
   list-style: none;
   
   margin: 0;
-  padding: 0 10px 0 10px;;
+  padding: 0 5px 0 5px;
+}
+
+li.nav.search, li.nav.cart, li.nav.user{
+  display: none;
 }
 
 a.nav{
@@ -245,7 +252,8 @@ hr.hr{
 .wrapper-grid {
   margin: 0 10%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 228px);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 25px;
 }
 
@@ -260,11 +268,17 @@ hr.hr{
 }
 
 .item_name {
+  overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   font-weight: bold;
   font-size: 14px;
 }
 
 .item_color {
+  overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   color: #888888;
   margin: 1rem 0;
   font-size: 14px;
@@ -529,3 +543,391 @@ button.email:hover{
   background-color: black;
   border: 1px solid white;
 }
+
+
+/* ====== Burger menu ====== */
+
+.burger {
+  outline: none;
+  width: 15px;
+  border: 0px;
+  padding: 12px 0;
+  margin-right: 10px;
+  background: transparent;
+  transition: all 250ms ease-out;
+  cursor: pointer;
+  float: right;
+}
+
+.burger:before, .burger:after {
+  content: '';
+  width: 15px;
+  height: 2px;
+  position: absolute;
+  background: white;
+  transition: all 250ms ease-out;
+  will-change: transform;
+}
+
+.burger:before {
+  transform: translateY(-3px);
+}
+
+.burger:after {
+  transform: translateY(3px);
+}
+
+/*line transition*/
+
+.active.burger:before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.active.burger:after {
+  transform: translateY(0) rotate(-45deg);
+}
+
+/* ====== Burger menu End====== */
+
+
+/* ====== Media Query ====== */
+
+
+/* ====== burger ====== */
+@media screen and (min-width: 992px){
+  nav.nav{
+/*     display: block; */
+    display: inline-block !important;
+  }
+}
+
+@media screen and (max-width: 992px){
+  nav.nav, div.signup, div.user{
+    display: none;
+  }
+  nav.nav{
+    padding: 0;
+  }
+  form.search{
+    display: none;
+  }
+  img.logo{
+    height: 30px;
+  }
+}
+
+ul.nav{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align:right;
+  float:right;
+}
+ul.nav > li{
+  display: inline-block;
+}
+/* 行動版時，調整列表樣式 */
+@media screen and (max-width: 992px){
+  ul.nav > li{
+    display: block;
+    padding: 10px 10px 10px 0;
+  }
+  li.nav.search, li.nav.cart, li.nav.user{
+    display: block;
+  }
+}
+
+button.burger{
+  display: none;
+}
+/* 行動版時，將按鈕顯示出來 */
+@media screen and (max-width: 992px){
+  button.burger{
+    display: flex;
+  }
+}
+/* ====== burger end ====== */
+
+@media screen and (min-width: 1400px){
+  .wrapper-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+  .wrapper-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+  .wrapper-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+  div.underline{
+    display: none;
+  }
+  .wrapper-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  .wrapper-grid-streetwear {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  .wrapper-grid-footwear {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  .wrapper-grid-streetwear-items {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  .wrapper-grid-footwear-items {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  h1.footwear_name{
+    text-align: left;
+  }
+  p.footwear_shop{
+    text-align: left;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  div.underline{
+    display: none;
+  }
+  .wrapper-grid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  .wrapper-grid-brands {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  .wrapper-grid-streetwear {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  .wrapper-grid-footwear {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  h1.footwear_name{
+    text-align: left;
+  }
+  p.footwear_shop{
+    text-align: left;
+  }
+  input.email{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px){
+  div.underline{
+    display: none;
+  }
+  .wrapper-grid{
+    margin: 0 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+  }
+
+  .wrapper-grid-brands {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+  }
+  .wrapper-grid-streetwear {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+  }
+  .wrapper-grid-footwear {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+  }
+  h1.footwear_name{
+    text-align: left;
+  }
+  p.footwear_shop{
+    text-align: left;
+  }
+  .wrapper-grid-footer{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 20px;
+  }
+  footer.footer{
+    margin-top: 50px;
+  }
+  .container-footer{
+    margin: 20px 0;
+  }
+  .container-footer > h2{
+    margin-bottom: 10px;
+    line-height: 25px;
+    font-size: 18px;
+  }
+  .container-footer > p{
+    line-height: 25px;
+  }
+  form.email{
+    margin-left: 0;
+  }
+  input.email{
+    margin: 5px 0 20px 0;
+    padding: 0;
+    width: 80%;
+  }
+  button.email{
+    width: 80px;
+    height: 30px;
+  }
+  p.copyright{
+    margin-top: 20px;
+  }
+  div.copyright{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 366px){
+  div.underline{
+    display: none;
+  }
+  div.logo{
+    margin-left: 10px;
+  }
+  div.title{
+    margin: 50px 10px 10px 10px;
+  }
+  h1.item_name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 10px 0;
+    font-size: 12px;
+  }
+  h1.brands_name{
+    margin: 5px 0;
+    font-size: 12px;
+  }
+  h2.title{
+    font-size: 18px;
+  }
+  a.title{
+    font-size: 10px;
+  }
+  p.item_color{
+    font-size: 10px;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  p.item_price{
+    font-size: 10px;
+    margin: 10px 0;
+  }
+  p.footwear_shop{
+    font-size: 10px;
+    margin: 10px 0;
+  }
+  .wrapper-grid{
+    margin: 0 10px;
+    gap: 10px;
+  }
+
+  .wrapper-grid-brands {
+    margin: 0 10px;
+    gap: 10px;
+  }
+  .wrapper-grid-streetwear {
+    margin: 0 10px;
+    gap: 10px;
+  }
+  .wrapper-grid-footwear {
+    margin: 0 10px;
+    gap: 10px;
+  }
+  .wrapper-grid-streetwear-items {
+    gap: 10px;
+  }
+  .wrapper-grid-footwear-items {
+    gap: 10px;
+  }
+  .wrapper-grid-footer{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  footer.footer{
+    margin-top: 50px;
+  }
+  .container-footer{
+    margin: 20px 0;
+  }
+  .container-footer > h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .container-footer > p{
+    font-size: 10px;
+    line-height: 15px;
+  }
+  form.email{
+    margin-left: 0;
+  }
+  label.email{
+    font-size: 12px;
+  }
+  input.email{
+    font-size: 12px;
+    margin: 5px 0 20px 0;
+    padding: 0;
+  }
+  button.email{
+    font-size: 12px;
+    width: 80px;
+    height: 30px;
+  }
+  p.copyright{
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  div.copyright{
+    font-size: 10px;
+  }
+  h1.footwear_name{
+    text-align: left;
+  }
+  p.footwear_shop{
+    text-align: left;
+  }
+}
+
+
+/* ====== Media Query End ====== */

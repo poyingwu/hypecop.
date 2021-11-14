@@ -66,6 +66,12 @@ div.one-column{
     width: 100%;
 }
 
+div.container-detail-img{
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+}
+
+
 div.container-detail-description > h1{
     margin-top: 0;
     margin-bottom: 25px;

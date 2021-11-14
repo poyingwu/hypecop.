@@ -140,3 +140,74 @@ div.portfolio-6{
     background-position: center center;
     height: 220px;
 }
+
+div.wrap-portfolio div{
+    transition: all .5s;
+}
+div.wrap-portfolio div:hover{
+    filter: brightness(.5);
+}
+
+
+
+
+
+/*========== Media Query ==========*/
+
+@media screen and (max-width: 992px){
+    div.wrap-portfolio{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    } 
+    div.about{
+        margin: 100px 20%;
+    }
+    div.bckgrnd-img-1{
+        height: 400px;
+    }
+    div.bckgrnd-img-2{
+        height: 400px;
+    }
+    div.bckgrnd-img-3{
+        height: 400px;
+    }
+    div.bckgrnd-img-4{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    div.wrap-bckgrnd{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    
+    }
+}
+
+@media screen and (max-width: 576px){
+    div.wrap-portfolio{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    } 
+    div.about{
+        margin: 75px 10%;
+    }
+    div.about > h2{
+        font-size: 21px;
+    }
+    div.about > p{
+        font-size: 14px;
+    }
+    div.bckgrnd-img-1{
+        height: 300px;
+    }
+    div.bckgrnd-img-2{
+        height: 300px;
+    }
+    div.bckgrnd-img-3{
+        height: 300px;
+    }
+    div.bckgrnd-img-4{
+        height: 300px;
+    }
+}

@@ -17,26 +17,31 @@
       <div class="logo">
         <a href="./index.html" class="logo"><img src="./images/logo.svg" alt="" class="logo"></a>
       </div>
-      
+
       <form action="" class="search">
-        <input type="text" class="search" placeholder="Search">
-        </form>
-      
-      <div class="nav">
+      <input type="text" class="search" placeholder="Search">
+      </form>
+      <button class="burger" onclick="this.classList.toggle('active');"></button>
+      <nav class="nav">
         <ul class="nav">
+          <li class="nav search"><input type="text" class="search list" placeholder="Search"></li>
           <li class="nav"><a href="./streetwear.html" class="nav">STREETWEAR<div class="underline"></div></a></li>
           <li class="nav"><a href="./footwear.html" class="nav">FOOTWEAR<div class="underline"></div></a></li>
-          <li class="nav"><a href="./news.html" class="nav">NEWS<div class="underline active"></div></a></li>
+          <li class="nav"><a href="./news.html" class="nav">NEWS<div class="underline"></div></a></li>
           <li class="nav"><a href="./contact.html" class="nav">CONTACT<div class="underline"></div></a></li>
           <li class="nav"><a href="./about.html" class="nav">ABOUT<div class="underline"></div></a></li>
+          <li class="nav cart"><a href="#" class="nav">CART<div class="underline"></div></a></li>
+          <li class="nav user"><a href="#" class="nav">LOG IN / SIGN UP<div class="underline"></div></a></li>
         </ul>
-      </div>
+      </nav>
       <div class="signup">
       <a href="" class="user"><img src="./images/user.svg" alt="" class="user"></a>
       </div>
       <div class="user">
         <a href="" class="user"><img src="./images/cart.svg" alt="" class="cart"></a>
       </div>
+
+    
     </header>
 
     
@@ -60,44 +65,44 @@
         <div class="view_main">
             <div class="view_wrap list-view" style="display: block;">
                 <div class="view_item">
-                    <div class="vi_left">
+                   <a href="./news_detail.html"><div class="vi_left">
                         <img src="./images/news_1.jpg">
-                    </div>
+                    </div></a>
                     <div class="vi_right">
-                        <p class="title">The new N.HOOLYWOOD x Graphpaper series is officially launched</p>
+                      <a href="./news_detail.html" style="text-decoration: none;"><p class="title">The new N.HOOLYWOOD x Graphpaper series is officially launched</p></a>
                         <p class="content">Ohana Daisuke and Nan Guizhi joined forces.</p>
                         <div class="btn"><a href="./news_detail.html">View More</a></div>
                     </div>
                 </div>
                 <hr>
                 <div class="view_item">
-                    <div class="vi_left">
+                  <a href=""><div class="vi_left">
                         <img src="./images/news_2.jpg">
-                    </div>
+                    </div></a>
                     <div class="vi_right">
-                        <p class="title">Official Images of the NBA x Nike Dunk Low EMB "Knicks"</p>
+                      <a href="" style="text-decoration: none;"><p class="title">Official Images of the NBA x Nike Dunk Low EMB "Knicks"</p></a>
                         <p class="content">Spike Lee would certainly appreciate these.</p>
                         <div class="btn">View More</div>
-                    </div>
+                    </div></a>
                 </div>
                 <hr>
                 <div class="view_item">
-                    <div class="vi_left">
+                  <a href=""><div class="vi_left">
                         <img src="./images/news_3.jpg">
-                    </div>
+                    </div></a>
                     <div class="vi_right">
-                        <p class="title">Official Images of the Air Jordan 3 "Pine Green"</p>
+                      <a href="" style="text-decoration: none;"><p class="title">Official Images of the Air Jordan 3 "Pine Green"</p></a>
                         <p class="content">Expected to drop towards the end of October 2021.</p>
                         <div class="btn">View More</div>
-                    </div>
+                    </div></a>
                 </div>
                 <hr>
                 <div class="view_item">
-                    <div class="vi_left">
+                  <a href=""><div class="vi_left">
                         <img src="./images/news_4.jpg">
-                    </div>
+                    </div></a>
                     <div class="vi_right">
-                        <p class="title">CDG x Vault by Vans Old Skool and Authentic Models Release at Dover </p>
+                      <a href="" style="text-decoration: none;"><p class="title">CDG x Vault by Vans Old Skool and Authentic Models Release at Dover </p></a>
                         <p class="content">Another chance to get the footwear styles.</p>
                         <div class="btn">View More</div>
                     </div>
@@ -181,6 +186,17 @@
   <script type="text/javascript" src="./js/vue.js"></script>
   <script type="text/javascript" src="./js/priceRange.js"></script>
   <script type="text/javascript" src="./js/list_grid.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function(){
+    
+      // 點擊按鈕，選單縮放
+      $("button.burger").on("click", function(){
+      $("nav.nav").slideToggle();
+      });
+    
+    });
+  </script>
 
   </body>
 </html>

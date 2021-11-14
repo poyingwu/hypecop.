@@ -20,26 +20,31 @@
       <div class="logo">
         <a href="./index.html" class="logo"><img src="./images/logo.svg" alt="" class="logo"></a>
       </div>
-      
-      <form action="" class="search">
-        <input type="text" class="search" placeholder="Search">
-        </form>
 
-      <div class="nav">
+      <form action="" class="search">
+      <input type="text" class="search" placeholder="Search">
+      </form>
+      <button class="burger" onclick="this.classList.toggle('active');"></button>
+      <nav class="nav">
         <ul class="nav">
+          <li class="nav search"><input type="text" class="search list" placeholder="Search"></li>
           <li class="nav"><a href="./streetwear.html" class="nav">STREETWEAR<div class="underline"></div></a></li>
           <li class="nav"><a href="./footwear.html" class="nav">FOOTWEAR<div class="underline"></div></a></li>
           <li class="nav"><a href="./news.html" class="nav">NEWS<div class="underline"></div></a></li>
           <li class="nav"><a href="./contact.html" class="nav">CONTACT<div class="underline"></div></a></li>
-          <li class="nav"><a href="./about.html" class="nav">ABOUT<div class="underline active"></div></a></li>
+          <li class="nav"><a href="./about.html" class="nav">ABOUT<div class="underline"></div></a></li>
+          <li class="nav cart"><a href="#" class="nav">CART<div class="underline"></div></a></li>
+          <li class="nav user"><a href="#" class="nav">LOG IN / SIGN UP<div class="underline"></div></a></li>
         </ul>
-      </div>
+      </nav>
       <div class="signup">
       <a href="" class="user"><img src="./images/user.svg" alt="" class="user"></a>
       </div>
       <div class="user">
         <a href="" class="user"><img src="./images/cart.svg" alt="" class="cart"></a>
       </div>
+
+    
     </header>
 
     
@@ -118,6 +123,17 @@
   <script type="text/javascript" src="./js/vue.js"></script>
   <script type="text/javascript" src="./js/priceRange.js"></script>
   <script type="text/javascript" src="./js/list_grid.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function(){
+    
+      // 點擊按鈕，選單縮放
+      $("button.burger").on("click", function(){
+      $("nav.nav").slideToggle();
+      });
+    
+    });
+  </script>
 
   </body>
 </html>

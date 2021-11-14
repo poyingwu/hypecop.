@@ -100,3 +100,31 @@ input.submit_btn:hover{
     margin-top: 100px;
 }
 
+
+
+/*========== Media Query ==========*/
+
+@media screen and (max-width: 992px){
+    div.form{
+        margin: 0 10%;
+    }
+    .form label{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    div.form-input{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .form input{
+        padding: 8px;
+    }
+    .form p{
+        margin-top: 30px;
+        font-size: 12px;
+    }
+}

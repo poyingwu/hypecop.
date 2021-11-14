@@ -159,3 +159,51 @@ body{
 .btn a:hover {
 	color: black;
 }
+
+
+/*========== Media Query ==========*/
+
+@media screen and (max-width: 992px){
+    .view_item .title{
+		font-size: 24px;
+	}
+	.view_item .content{
+		font-size: 14px;
+	}
+	.view_item .btn{
+		width: 90px;
+	}
+	.btn a{
+		font-size: 14px;
+	}
+	.grid-view {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		gap: 20px;
+	}
+}
+
+@media screen and (max-width: 768px){
+    .view_item{
+        grid-template-columns: 1fr;
+    	grid-template-rows: 1fr;
+    	gap: 10px;
+    }
+	.links ul{
+		display: none;
+	}
+	.view_item_grid p.title{
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.view_item .btn{
+		position: relative;
+	}
+	
+}
+
+@media screen and (max-width: 576px){
+    .view_item .title{
+		font-size: 18px;
+	}
+}
