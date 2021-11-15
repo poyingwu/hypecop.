@@ -1,6 +1,5 @@
 *{
   box-sizing: border-box;
-  transition: all .5s;
 }
 html{
   --aside-width: 240px;
