@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  transition: all .5s;
 }
 html{
   --aside-width: 240px;
@@ -170,7 +171,7 @@ div.signup{
   cursor: pointer;
   float: right;
   vertical-align: middle;
-  padding: 5px 10px;
+  padding: 5px 20px 5px 10px;
   -webkit-transition: .4s;
     transition: .4s;
     -webkit-transition-timing-function: ease-out;
@@ -549,7 +550,7 @@ button.email:hover{
   width: 15px;
   border: 0px;
   padding: 12px 0;
-  margin-right: 10px;
+  margin-right: 20px;
   background: transparent;
   transition: all 250ms ease-out;
   cursor: pointer;
@@ -670,6 +671,9 @@ button.burger{
 }
 
 @media (min-width: 768px) and (max-width: 992px){
+  div.logo{
+    margin-left: 20px;
+  }
   div.underline{
     display: none;
   }
@@ -707,6 +711,9 @@ button.burger{
 }
 
 @media (min-width: 576px) and (max-width: 768px){
+  div.logo{
+    margin-left: 20px;
+  }
   div.underline{
     display: none;
   }
@@ -742,39 +749,42 @@ button.burger{
 }
 
 @media screen and (max-width: 576px){
+  div.logo{
+    margin-left: 20px;
+  }
   div.underline{
     display: none;
   }
   .wrapper-grid{
-    margin: 0 10px;
+    margin: 0 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 10px;
+    gap: 20px;
   }
 
   .wrapper-grid-brands {
-    margin: 0 10px;
+    margin: 0 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 10px;
+    gap: 20px;
   }
   .wrapper-grid-streetwear {
-    margin: 0 10px;
+    margin: 0 20px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    gap: 10px;
+    gap: 20px;
   }
   .wrapper-grid-footwear {
-    margin: 0 10px;
+    margin: 0 20px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    gap: 10px;
+    gap: 20px;
   }
   .wrapper-grid-streetwear-items {
-    gap: 10px;
+    gap: 20px;
   }
   .wrapper-grid-footwear-items {
-    gap: 10px;
+    gap: 20px;
   }
   div.title{
     margin-right: 10px;
@@ -830,7 +840,7 @@ button.burger{
     display: none;
   }
   div.logo{
-    margin-left: 10px;
+    margin-left: 20px;
   }
   div.title{
     margin: 50px 10px 10px 10px;
@@ -868,27 +878,27 @@ button.burger{
     margin: 10px 0;
   }
   .wrapper-grid{
-    margin: 0 10px;
-    gap: 10px;
+    margin: 0 20px;
+    gap: 20px;
   }
 
   .wrapper-grid-brands {
-    margin: 0 10px;
-    gap: 10px;
+    margin: 0 20px;
+    gap: 20px;
   }
   .wrapper-grid-streetwear {
-    margin: 0 10px;
-    gap: 10px;
+    margin: 0 20px;
+    gap: 20px;
   }
   .wrapper-grid-footwear {
-    margin: 0 10px;
-    gap: 10px;
+    margin: 0 20px;
+    gap: 20px;
   }
   .wrapper-grid-streetwear-items {
-    gap: 10px;
+    gap: 20px;
   }
   .wrapper-grid-footwear-items {
-    gap: 10px;
+    gap: 20px;
   }
   .wrapper-grid-footer{
     grid-template-columns: 1fr;

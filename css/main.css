@@ -452,19 +452,19 @@ div.size.-on{
 
 @media screen and (max-width: 576px){
   .wrapper-grid-main{
-    margin: 0 10px;
+    margin: 0 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 15px;
+    gap: 20px;
   }
   .wrapper-grid-main.-on{
-    margin: 0 10px;
+    margin: 0 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 15px;
+    gap: 20px;
   }
   .wrapper-grid-main-items{
-    gap: 15px;
+    gap: 20px;
   }
   div.filter{
     margin-right: 0px;
@@ -472,7 +472,7 @@ div.size.-on{
   .wrapper-grid-main-items.-on{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    gap: 15px;
+    gap: 20px;
   }
   
   div.select-selected{
@@ -492,15 +492,15 @@ div.size.-on{
 
 @media screen and (max-width: 366px){
   .wrapper-grid-main{
-    margin: 0 10px;
+    margin: 0 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 15px;
+    gap: 20px;
   }
   .wrapper-grid-main.-on{
-    margin: 0 10px;
+    margin: 0 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 15px;
+    gap: 20px;
   }
 }

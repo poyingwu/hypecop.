@@ -31,26 +31,25 @@ ol.pagination > li{
     gap: 50px;
   }
 
-  img.item_img_current{
-      width: 100%;
-      margin-bottom: 15px;
-      border: 1px solid #898989;
-      cursor: pointer;
-  }
+  
 
   img.item_img_others{
     width: 100%;
-    opacity: 50%;
+    opacity: .5;
     margin-bottom: 15px;
     border: 1px solid #898989;
-      cursor: pointer;
       -webkit-transition: .4s;
     transition: .4s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
 
+
 img.item_img_others:hover{
+    opacity: 1;
+}
+img.item_img_others.-on{
+    border: 1px solid black;
     opacity: 1;
 }
 
@@ -67,7 +66,7 @@ div.one-column{
 }
 
 div.container-detail-img{
-    height: calc(100vh - 50px);
+    height: 100vh;
     overflow-y: scroll;
 }
 
@@ -93,7 +92,9 @@ div.item_size{
     margin: 25px 0 10px 0;
 }
 
-div.container-detail-description label{
+label.size{
+    background-color: white;
+    color: black;
     font-size: 14px;
     text-align: center;
     border: 1px solid black;
@@ -114,7 +115,7 @@ div.container-detail-description label{
 
 }
 
-div.container-detail-description label:hover{
+label.size:hover{
     background-color: black;
     color: white;
 }
@@ -129,9 +130,9 @@ input[type=radio] {
     position: absolute;
 }
 
-label.active {
-    background-color: #000;
-    color: #fff;
+label.size.-on{
+    background-color: black;
+    color: white;
 }
 
 div.quantity_input{
@@ -218,3 +219,147 @@ div.similar-items-heading{
 }
 
 
+div.mobile{
+    margin: 0 10%;
+    display: none;
+}
+div.thumb{
+    display: none;
+}
+
+
+
+/*========== Media Query ==========*/
+
+@media screen and (max-width: 992px){
+    div.container-detail-description{
+        display: none;
+    }
+    div.mobile{
+        margin: 0;
+        display: block;
+        box-shadow: 0px 0px 3px grey;
+        padding: 50px 10%;
+    }
+    .wrapper-grid-item-detail {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+      }
+      div.thumb{
+          display: inline-block;
+          width: 100%;
+      }
+      
+    div.container-detail-slider{
+        display: none;
+    }
+    div.thumb-parent{
+        font-size: 0;
+        display: grid;
+        margin: 0 10%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+    }
+    div.wrapper-grid-similar-items{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+      }
+      input.quantity{
+          width: calc(100% - 100px);
+      }
+      div.quantity a{
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+      }
+      div.quantity{
+        font-size: 0;
+    }
+    div.quantity_input{
+        font-size: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    div.container-detail-description > h1{
+        font-size: 24px;
+    }
+    
+}
+
+@media screen and (max-width: 576px){
+    div.wrapper-grid-similar-items{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+      }
+      div.container-detail-description > h1{
+          font-size: 18px;
+          margin: 20px 0;
+      }
+      div.brand_name{
+          font-size: 14px;
+          margin: 20px 0;
+      }
+      div.price{
+          font-size: 14px;
+      }
+      div.item_size{
+          font-size: 14px;
+          margin: 20px 0 10px 0;
+      }
+      div.container-detail-description label{
+          font-size: 14px;
+          margin-right: 10px;
+          height: 40px;
+          width: 40px;
+      }
+      div.quantity  div{
+          font-size: 14px;
+      }
+      div.quantity a{
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+      }
+      input.quantity{
+          height: 40px;
+          width: calc(100% - 80px);
+      }
+      ol.pagination{
+          margin: 20px;
+      }
+      div.thumb-parent{
+        margin: 0 20px;
+    }
+    .wrapper-grid-item-detail {
+        margin: 0 20px;
+      }
+      div.wrapper-grid-similar-items{
+        margin: 0 20px;
+      }
+    
+}
+
+@media screen and (max-width: 366px){
+    div.mobile{
+        margin: 0 20px;
+    }  
+}
