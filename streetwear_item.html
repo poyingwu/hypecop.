@@ -86,7 +86,7 @@
             <label for="s" data-value="S" class="size">
                 S<input type="radio" name="size" id="s">
             </label>
-            <label for="m" data-value="M"  class="size">
+            <label for="m" data-value="M"  class="size -on">
                 M<input type="radio" name="size" id="m">
             </label>
             <label for="l" data-value="L" class="size">
@@ -123,7 +123,7 @@
   <label for="s" data-value="S" class="size">
       S<input type="radio" name="size" id="s">
   </label>
-  <label for="m" data-value="M" class="size">
+  <label for="m" data-value="M" class="size -on">
       M<input type="radio" name="size" id="m">
   </label>
   <label for="l" data-value="L" class="size">
@@ -267,13 +267,16 @@
         $(this).addClass('-on');    
     }
 });
-  </script>
-  <script>
-    $("label.size").on("click", function(){
-            $(this).toggleClass("-on");
-        });
 
-</script>
+$('label.size').click( function(){
+    if ( $(this).hasClass('-on') ) {
+        $(this).removeClass('-on');
+    } else {
+        $('label.size').removeClass('-on');
+        $(this).addClass('-on');    
+    }
+  });
+  </script>
 
   </body>
 </html>
