@@ -17,6 +17,7 @@ body{
 	position: relative;
 	width: 100%;
 	background: white; /* darckblue */
+	margin-top: 50px;
 }
 .myslide{
 	height: 800px;
