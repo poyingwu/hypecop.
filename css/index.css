@@ -17,9 +17,8 @@ header{
   display: inline-block;
   background-color: black;
   font-size: 0;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0px;
+  position: fixed;
+  top: -0.5px;
   z-index: 3;
   padding: 10px 0;
 }
