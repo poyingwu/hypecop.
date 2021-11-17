@@ -650,6 +650,9 @@ button.burger{
     grid-template-rows: 1fr;
     gap: 20px;
   }
+  div.underline{
+    display: block;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px){
@@ -658,6 +661,9 @@ button.burger{
     grid-template-rows: 1fr;
     gap: 20px;
   }
+  div.underline{
+    display: block;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
@@ -665,6 +671,9 @@ button.burger{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
+  }
+  div.underline{
+    display: block;
   }
 }
 

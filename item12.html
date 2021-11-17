@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>HYPECOP.</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/item.css">
+    <link rel="icon" href="./favicon.ico">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html" class="logo"><img src="./images/logo.svg" alt="" class="logo"></a>
+      </div>
+
+      <form action="" class="search">
+      <input type="text" class="search" placeholder="Search">
+      </form>
+      <button class="burger" onclick="this.classList.toggle('active');"></button>
+      <nav class="nav">
+        <ul class="nav">
+          <li class="nav search"><input type="text" class="search list" placeholder="Search"></li>
+          <li class="nav"><a href="./streetwear.html" class="nav">STREETWEAR<div class="underline active"></div></a></li>
+          <li class="nav"><a href="./footwear.html" class="nav">FOOTWEAR<div class="underline"></div></a></li>
+          <li class="nav"><a href="./news.html" class="nav">NEWS<div class="underline"></div></a></li>
+          <li class="nav"><a href="./contact.html" class="nav">CONTACT<div class="underline"></div></a></li>
+          <li class="nav"><a href="./about.html" class="nav">ABOUT<div class="underline"></div></a></li>
+          <li class="nav cart"><a href="#" class="nav">CART<div class="underline"></div></a></li>
+          <li class="nav user"><a href="#" class="nav">LOG IN / SIGN UP<div class="underline"></div></a></li>
+        </ul>
+      </nav>
+      <div class="signup">
+      <a href="" class="user"><img src="./images/user.svg" alt="" class="user"></a>
+      </div>
+      <div class="user">
+        <a href="" class="user"><img src="./images/cart.svg" alt="" class="cart"></a>
+      </div>
+
+    
+    </header>
+
+    <div class="pagination">
+        <ol class="pagination">
+            <li><a href="./index.html">Home</a> > </li>
+            <li><a href="./streetwear.html">Streetwear</a> > </li>
+            <li><a href="./item12.html">LLW T-SHIRT OFF WHITE</a></li>
+        </ol>
+    </div>
+    <div class="container-detail-slider thumb-parent">
+      <a href="#img-1" class="move" data-id="img-1"><div class="one-column thumb"><img src="./images/13.jpg" alt='item image' class="item_img_others -on"></div></a>
+      <a href="#img-2" class="move" data-id="img-2"><div class="one-column thumb"><img src="./images/52.jpg" alt='item image' class="item_img_others"></div></a>
+      <a href="#img-3" class="move" data-id="img-3"><div class="one-column thumb"><img src="./images/item-39.jpg" alt='item image' class="item_img_others"></div></a>
+      <a href="#img-4" class="move" data-id="img-4"><div class="one-column thumb"><img src="./images/item-40.jpg" alt='item image' class="item_img_others"></div></a>
+      <a href="#img-5" class="move" data-id="img-5"><div class="one-column thumb"><img src="./images/13.jpg" alt='item image' class="item_img_others"></div></a>
+    </div>
+    <div class="wrapper-grid-item-detail">
+        <div class="container-detail-slider">
+          <a href="#img-1" class="move" data-id="img-1"><div class="one-column"><img src="./images/13.jpg" alt='item image' class="item_img_others -on"></div></a>
+          <a href="#img-2" class="move" data-id="img-2"><div class="one-column"><img src="./images/52.jpg" alt='item image' class="item_img_others"></div></a>
+          <a href="#img-3" class="move" data-id="img-3"><div class="one-column"><img src="./images/item-39.jpg" alt='item image' class="item_img_others"></div></a>
+          <a href="#img-4" class="move" data-id="img-4"><div class="one-column"><img src="./images/item-40.jpg" alt='item image' class="item_img_others"></div></a>
+          <a href="#img-5" class="move" data-id="img-5"><div class="one-column"><img src="./images/13.jpg" alt='item image' class="item_img_others"></div></a>
+            
+        </div>
+
+        <div class="container-detail-img">
+            <img src="./images/13.jpg" alt='item image' class="big_item_img" id="img-1">
+            <img src="./images/52.jpg" alt='item image' class="big_item_img" id="img-2">
+            <img src="./images/item-39.jpg" alt='item image' class="big_item_img" id="img-3">
+            <img src="./images/item-40.jpg" alt='item image' class="big_item_img" id="img-4">
+            <img src="./images/13.jpg" alt='item image' class="big_item_img" id="img-5">
+        </div>
+
+        <div class="container-detail-description">
+            <h1>LLW T-SHIRT OFF WHITE</h1>
+            <div class="brand_name">WTAPS</div>
+            <div class="price">$110</div>
+            <div class="item_size">Size:</div>
+            <label for="xs" data-value="XS" class="size">
+                XS<input type="radio" name="size" id="xs">
+            </label>
+            <label for="s" data-value="S" class="size">
+                S<input type="radio" name="size" id="s">
+            </label>
+            <label for="m" data-value="M"  class="size -on">
+                M<input type="radio" name="size" id="m">
+            </label>
+            <label for="l" data-value="L" class="size">
+                L<input type="radio" name="size" id="l">
+            </label>
+            <label for="xl" data-value="XL" class="size">
+                XL<input type="radio" name="size" id="xl">
+            </label>
+
+            <div class="quantity_input">
+                <div>Quantity:</div>
+                <a href="">-</a>
+                <input type="text" value="1" id="quantity" name="quantity" class="quantity">
+                <a href="">+</a>
+            </div>
+
+            
+            <a href="" class="add_to_cart">Add to cart</a>
+            <a href="" class="add_to_wishlist">Add to wishlist</a>
+
+            
+
+        </div>
+    </div>
+<!-- =============================   Mobile  ===============================  -->
+<div class="container-detail-description mobile">
+  <h1>LLW T-SHIRT OFF WHITE</h1>
+  <div class="brand_name">WTAPS</div>
+  <div class="price">$110</div>
+  <div class="item_size">Size:</div>
+  <label for="xs" data-value="XS" class="size">
+      XS<input type="radio" name="size" id="xs">
+  </label>
+  <label for="s" data-value="S" class="size">
+      S<input type="radio" name="size" id="s">
+  </label>
+  <label for="m" data-value="M" class="size -on">
+      M<input type="radio" name="size" id="m">
+  </label>
+  <label for="l" data-value="L" class="size">
+      L<input type="radio" name="size" id="l">
+  </label>
+  <label for="xl" data-value="XL" class="size">
+      XL<input type="radio" name="size" id="xl">
+  </label>
+
+  <div class="quantity_input">
+      <div>Quantity:</div>
+      <div class="quantity"><a href="">-</a><input type="text" value="1" id="quantity" name="quantity" class="quantity"><a href="">+</a></div>
+  </div>
+
+  
+  <a href="" class="add_to_cart">Add to cart</a>
+  <a href="" class="add_to_wishlist">Add to wishlist</a>
+
+  </div>
+
+<!-- =============================   Mobile End  ===============================  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="similar-items-heading">
+        <h2>SIMILAR ITEMS</h2>
+    </div>
+    <div class="wrapper-grid-similar-items">
+        <div class="container">
+            <a href="./item5.html" class="item">
+            <img src="./images/5.jpg" alt='item image' class="item_img" onmouseover="this.src='./images/44.jpg';" onmouseout="this.src='./images/5.jpg';">
+            <h1 class="item_name">C.P. COMPANY X ADIDAS</h1>
+            <p class="item_color">Camo</p>
+            <p class="item_price">$879</p>
+            </a>
+          </div>
+    
+          <div class="container">
+            <a href="./item2.html" class="item">
+            <img src="./images/6.jpg" alt='item image' class="item_img" onmouseover="this.src='./images/45.jpg';" onmouseout="this.src='./images/6.jpg';">
+            <h1 class="item_name">NEW BALANCE X WTAPS</h1>
+            <p class="item_color">Athletic Grey</p>
+            <p class="item_price">$249</p>
+            </a>
+          </div>
+    
+          <div class="container">
+            <a href="./item6.html" class="item">
+            <img src="./images/7.jpg" alt='item image' class="item_img" onmouseover="this.src='./images/46.jpg';" onmouseout="this.src='./images/7.jpg';">
+            <h1 class="item_name">NIKE X FRAGMENT</h1>
+            <p class="item_color">Black</p>
+            <p class="item_price">$165</p>
+            </a>
+          </div>
+    
+          <div class="container">
+            <a href="./item9.html" class="item">
+            <img src="./images/10.jpg" alt='item image' class="item_img" onmouseover="this.src='./images/49.jpg';" onmouseout="this.src='./images/10.jpg';">
+            <h1 class="item_name">OFF-WHITE BANDIT</h1>
+            <p class="item_color">Light Blue & Black</p>
+            <p class="item_price">$565</p>
+            </a>
+          </div>
+    </div>
+
+
+
+  <footer class="footer">
+    <div class="wrapper-grid-footer">
+      <div class="container-footer">
+    <h2>SIGN UP TO THE HYPECOP. MAILING LIST</h2>
+    <p>Sign up for exclusive early sale access and tailored new arrivals</p>
+      </div>
+      <div class="container-footer">
+        <form class="email" action="index.html" method="post">
+          <label class="email" for="">Email</label>
+          <input class="email" type="email" name="email" value="">
+          <button class="email" type="button" name="button">Sign up</button>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">©2021 Hypecop. All Rights Reserved.
+    <br>
+    </p>
+    <div class="copyright">本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。參考資源:
+      <a href="https://www.endclothing.com/us"> END. Clothing</a>
+      。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/webindex/">
+        [緯育TibaMe]</a>
+        ，後續會由專人協助處理
+  </div>
+
+  </footer>
+
+
+  
+  <script type="text/javascript" src="./js/list_grid.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function(){
+    
+      // 點擊按鈕，選單縮放
+      $("button.burger").on("click", function(){
+      $("nav.nav").slideToggle();
+      });
+    
+    });
+  </script>
+
+  <script>
+    $("a.move").on("click", function(e){
+  e.preventDefault();
+
+  let page_item_offset_top = $("#" + $(this).attr("data-id")).get(0).offsetTop;
+
+  console.log(page_item_offset_top);
+
+  $(".container-detail-img").animate({
+    scrollTop: page_item_offset_top
+  }, 500);
+
+  });
+  </script>
+  <script>
+    $('img.item_img_others').click( function(){
+    if ( $(this).hasClass('-on') ) {
+        $(this).removeClass('-on');
+    } else {
+        $('img.item_img_others').removeClass('-on');
+        $(this).addClass('-on');    
+    }
+});
+
+$('label.size').click( function(){
+    if ( $(this).hasClass('-on') ) {
+        $(this).removeClass('-on');
+    } else {
+        $('label.size').removeClass('-on');
+        $(this).addClass('-on');    
+    }
+  });
+  </script>
+
+  </body>
+</html>

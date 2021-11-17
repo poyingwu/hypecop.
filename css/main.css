@@ -309,7 +309,6 @@ div.size.-on{
 
   button.btn-filter{
     display: none;
-    margin: 0 10% 0 10%;
     cursor: pointer;
     padding: 5px 0px;
     border-radius: 0;
@@ -430,6 +429,10 @@ div.size.-on{
     grid-template-rows: 1fr;
     gap: 20px;
   }
+  div.close{
+    display: none;
+  }
+  
 }
 
 @media screen and (max-width: 768px){
@@ -448,6 +451,13 @@ div.size.-on{
   .select-items div,.select-selected {
     padding: 5px 20px 5px 0;
   }
+  div.confirm{
+    display: none;
+  }
+  div.close{
+    display: inline-block;
+  }
+  
 }
 
 @media screen and (max-width: 576px){
@@ -459,7 +469,7 @@ div.size.-on{
   }
   .wrapper-grid-main.-on{
     margin: 0 20px;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
   }
@@ -470,6 +480,7 @@ div.size.-on{
     margin-right: 0px;
   }
   .wrapper-grid-main-items.-on{
+    display: none;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
@@ -480,10 +491,10 @@ div.size.-on{
     right: 0;
 }
   div.category > a{
-    font-size: 14px;
+    font-size: 18px;
   }
   h2.category-title{
-    font-size: 14px;
+    font-size: 18px;
   }
   div.category{
     margin-bottom: 30px;
@@ -493,9 +504,10 @@ div.size.-on{
   }
   div .filter_item{
     margin: 3px 0;
+    display: inline-block;
   }
   span.filter_item{
-    font-size: 14px;
+    font-size: 16px;
   }
   div.filter_body{
     margin: 10px 0;
@@ -504,11 +516,48 @@ div.size.-on{
     padding: 5px 0;
   }
   span.size{
-    font-size: 14px;
+    font-size: 16px;
   }
   span.range-value.min, span.range-value.max{
-    font-size: 14px;
+    font-size: 16px;
   }
+  div.buttons.-on{
+    display: none;
+  }
+  div.loadmore.-on{
+    display: none;
+  }
+  button.btn-filter.-on{
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  button.btn-filter:hover.-on{
+    background: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  div.btn-filter.-on{
+    width: 100%;
+    margin: 20px 0;
+  }
+  div.filter.-on{
+    margin: 0 10%;
+  }
+  div.confirm{
+    display: block;
+  }
+  div.confirm.-on{
+    margin: 75px auto;
+    width: 100%;
+  }
+  button.close:hover.-on{
+    border: none;
+  }
+  
 }
 
 
@@ -522,13 +571,13 @@ div.size.-on{
 @media screen and (max-width: 366px){
   .wrapper-grid-main{
     margin: 0 20px;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
   }
   .wrapper-grid-main.-on{
     margin: 0 20px;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
   }

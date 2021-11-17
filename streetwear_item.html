@@ -24,7 +24,7 @@
       <nav class="nav">
         <ul class="nav">
           <li class="nav search"><input type="text" class="search list" placeholder="Search"></li>
-          <li class="nav"><a href="./streetwear.html" class="nav">STREETWEAR<div class="underline"></div></a></li>
+          <li class="nav"><a href="./streetwear.html" class="nav">STREETWEAR<div class="underline active"></div></a></li>
           <li class="nav"><a href="./footwear.html" class="nav">FOOTWEAR<div class="underline"></div></a></li>
           <li class="nav"><a href="./news.html" class="nav">NEWS<div class="underline"></div></a></li>
           <li class="nav"><a href="./contact.html" class="nav">CONTACT<div class="underline"></div></a></li>
@@ -163,7 +163,7 @@
     </div>
     <div class="wrapper-grid-similar-items">
         <div class="container">
-            <a href="#" class="item">
+            <a href="./item5.html" class="item">
             <img src="./images/5.jpg" alt='item image' class="item_img" onmouseover="this.src='./images/44.jpg';" onmouseout="this.src='./images/5.jpg';">
             <h1 class="item_name">C.P. COMPANY X ADIDAS</h1>
             <p class="item_color">Camo</p>
@@ -172,7 +172,7 @@
           </div>
     
           <div class="container">
-            <a href="#" class="item">
+            <a href="./item2.html" class="item">
             <img src="./images/6.jpg" alt='item image' class="item_img" onmouseover="this.src='./images/45.jpg';" onmouseout="this.src='./images/6.jpg';">
             <h1 class="item_name">NEW BALANCE X WTAPS</h1>
             <p class="item_color">Athletic Grey</p>
@@ -181,7 +181,7 @@
           </div>
     
           <div class="container">
-            <a href="#" class="item">
+            <a href="./item6.html" class="item">
             <img src="./images/7.jpg" alt='item image' class="item_img" onmouseover="this.src='./images/46.jpg';" onmouseout="this.src='./images/7.jpg';">
             <h1 class="item_name">NIKE X FRAGMENT</h1>
             <p class="item_color">Black</p>
@@ -190,7 +190,7 @@
           </div>
     
           <div class="container">
-            <a href="#" class="item">
+            <a href="./item9.html" class="item">
             <img src="./images/10.jpg" alt='item image' class="item_img" onmouseover="this.src='./images/49.jpg';" onmouseout="this.src='./images/10.jpg';">
             <h1 class="item_name">OFF-WHITE BANDIT</h1>
             <p class="item_color">Light Blue & Black</p>
@@ -229,8 +229,7 @@
   </footer>
 
 
-  <script type="text/javascript" src="./js/vue.js"></script>
-  <script type="text/javascript" src="./js/priceRange.js"></script>
+  
   <script type="text/javascript" src="./js/list_grid.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
@@ -246,15 +245,15 @@
 
   <script>
     $("a.move").on("click", function(e){
-  e.preventDefault();
+      e.preventDefault();
 
-  let page_item_offset_top = $("#" + $(this).attr("data-id")).get(0).offsetTop;
+      let page_item_offset_top = $("#" + $(this).attr("data-id")).get(0).offsetTop;
 
-  console.log(page_item_offset_top);
+      console.log(page_item_offset_top);
 
-  $(".container-detail-img").animate({
-    scrollTop: page_item_offset_top
-  }, 500);
+      $(".container-detail-img").animate({
+        scrollTop: page_item_offset_top
+      }, 500);
 
   });
   </script>
