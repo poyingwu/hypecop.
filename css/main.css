@@ -272,8 +272,6 @@ div.size.-on{
     margin-left: -7px;
     border: none;
     background-color: black;
-    -ms-touch-action: pan-x;
-    touch-action: pan-x;
     transition: box-shadow .3s ease-out,background-color .3s ease,-webkit-transform .3s ease-out;
     transition: transform .3s ease-out,box-shadow .3s ease-out,background-color .3s ease;
     transition: transform .3s ease-out,box-shadow .3s ease-out,background-color .3s ease,-webkit-transform .3s ease-out;
