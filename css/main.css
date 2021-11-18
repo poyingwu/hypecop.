@@ -226,14 +226,17 @@ div.size.-on{
     top: 20px;
   }
   .range-value.min{
-    left: -7px;
+    left: 0;
   }
 
   .range-value.max{
-    right: -7px;
+    position: absolute;
+    right: 0;
+    float: right;
+    text-align: right;
   }
   .track-container{
-    width: 95%;
+    width: 100%;
     position: relative;
     cursor: pointer;
     height: 2px;
@@ -253,28 +256,17 @@ div.size.-on{
 
   .track-highlight{
     background-color: black;
-    z-index: 1;
   }
 
   .track-btn{
     border-radius: 50%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    outline: none;
     cursor: pointer;
     display: block;
     position: absolute;
-    z-index: 2;
+    top: -6px;
     width: 15px;
     height: 15px;
-    top: calc(-50% - 5px);
-    margin-left: -7px;
-    border: none;
     background-color: black;
-    transition: box-shadow .3s ease-out,background-color .3s ease,-webkit-transform .3s ease-out;
-    transition: transform .3s ease-out,box-shadow .3s ease-out,background-color .3s ease;
-    transition: transform .3s ease-out,box-shadow .3s ease-out,background-color .3s ease,-webkit-transform .3s ease-out;
   }
 
   div.loadmore{

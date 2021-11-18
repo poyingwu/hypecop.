@@ -30,7 +30,7 @@ var app = new Vue({
       let moveInPct = moveDiff / percentInPx
       // console.log(moveInPct)
 
-      if(moveInPct<1 || moveInPct>100) return;
+      if(moveInPct<1 || moveInPct>96.5) return;
       let value = ( Math.round(moveInPct / this.percentPerStep) * this.step ) + this.min;
       if(track==='track1'){
         if(value >= (this.maxValue - this.step)) return;
@@ -112,7 +112,7 @@ var app = new Vue({
     this.totalSteps = (this.max - this.min) / this.step;
 
     // percent the track button to be moved on each step
-    this.percentPerStep = 100 / this.totalSteps;
+    this.percentPerStep = 96.5 / this.totalSteps;
     // console.log('percentPerStep', this.percentPerStep)
 
     // set track1 initilal
