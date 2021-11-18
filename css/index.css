@@ -737,6 +737,15 @@ button.burger{
   div.underline{
     display: none;
   }
+  div.mobile-active{
+    display: block;
+    margin-top: 4px;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    right: 0;
+}
   .wrapper-grid{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -775,6 +784,15 @@ button.burger{
   div.underline{
     display: none;
   }
+  div.mobile-active{
+    display: block;
+    margin-top: 4px;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    right: 0;
+}
   .wrapper-grid{
     margin: 0 20px;
     grid-template-columns: 1fr 1fr;
@@ -859,6 +877,15 @@ button.burger{
   div.underline{
     display: none;
   }
+  div.mobile-active{
+    display: block;
+    margin-top: 4px;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    right: 0;
+}
   div.logo{
     margin-left: 20px;
   }
