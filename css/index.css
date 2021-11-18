@@ -127,6 +127,10 @@ div.underline{
     transition-timing-function: ease-out;
 }
 
+div.mobile-active{
+  display: none;
+}
+
 div.active{
   width: 100%;
 }
@@ -683,6 +687,15 @@ button.burger{
   }
   div.underline{
     display: none;
+  }
+  div.mobile-active{
+      display: block;
+      margin-top: 4px;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: white;
+      right: 0;
   }
   .wrapper-grid{
     grid-template-columns: 1fr 1fr 1fr;
